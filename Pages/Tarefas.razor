@@ -1,0 +1,43 @@
+@page "/tarefas"
+@using System.Collections.Generic
+
+<h1 class="text-2xl font-bold mb-4">Painel de Tarefas</h1>
+
+<input @bind="novaTarefa" placeholder="Digite uma nova tarefa"
+       class="border p-2 rounded w-full mb-2" />
+
+<button @onclick="AdicionarTarefa" class="bg-blue-500 text-white px-4 py-2 rounded">Adicionar</button>
+
+<ul class="mt-4">
+    @foreach (var tarefa in tarefas.Select((t, i) => new { Texto = t, Index = i }))
+    {
+        <li class="border-b py-2 flex justify-between items-center">
+            <span>@tarefa.Texto</span>
+
+            <!-- Ícone de edição (simples por enquanto como botão de texto) -->
+            <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">
+                ✏️ Editar
+            </button>
+        </li>
+    }
+</ul>
+
+@code {
+    private string novaTarefa;
+    private List<string> tarefas = new();
+
+    private void AdicionarTarefa()
+    {
+        if (!string.IsNullOrWhiteSpace(novaTarefa))
+        {
+            tarefas.Add(novaTarefa);
+            novaTarefa = string.Empty;
+        }
+    }
+
+    private void EditarTarefa(int index)
+    {
+        Console.WriteLine($"Editar tarefa {index}: {tarefas[index]}");
+        // Aqui depois vamos permitir editar o conteúdo, mostrar um input no lugar do texto
+    }
+}
