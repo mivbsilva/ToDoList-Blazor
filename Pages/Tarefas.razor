@@ -12,12 +12,22 @@
     @foreach (var tarefa in tarefas.Select((t, i) => new { Texto = t, Index = i }))
     {
         <li class="border-b py-2 flex justify-between items-center">
-            <span>@tarefa.Texto</span>
+            @if (tarefa.Index == tarefaEditandoIndex)
+            {
+                <!-- Input para editar -->
+                <input @bind="tarefaEditadaTexto" class="border p-2 rounded w-full mr-2" />
 
-            <!-- Ícone de edição (simples por enquanto como botão de texto) -->
-            <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">
-                ✏️ Editar
-            </button>
+                <button @onclick="SalvarEdicao" class="bg-green-500 text-white px-2 py-1 rounded ml-2">Salvar</button>
+                <button @onclick="CancelarEdicao" class="bg-gray-400 text-white px-2 py-1 rounded ml-2">Cancelar</button>
+            }
+            else
+            {
+                <span>@tarefa.Texto</span>
+
+                <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">
+                    ✏️ Editar
+                </button>
+            }
         </li>
     }
 </ul>
@@ -25,6 +35,9 @@
 @code {
     private string novaTarefa;
     private List<string> tarefas = new();
+
+    private int? tarefaEditandoIndex = null; // qual tarefa estou editando (null = nenhuma)
+    private string tarefaEditadaTexto = string.Empty; // o texto novo enquanto edita
 
     private void AdicionarTarefa()
     {
@@ -37,7 +50,23 @@
 
     private void EditarTarefa(int index)
     {
-        Console.WriteLine($"Editar tarefa {index}: {tarefas[index]}");
-        // Aqui depois vamos permitir editar o conteúdo, mostrar um input no lugar do texto
+        tarefaEditandoIndex = index;
+        tarefaEditadaTexto = tarefas[index]; // coloca no input o valor atual
+    }
+
+    private void SalvarEdicao()
+    {
+        if (tarefaEditandoIndex != null && !string.IsNullOrWhiteSpace(tarefaEditadaTexto))
+        {
+            tarefas[(int)tarefaEditandoIndex] = tarefaEditadaTexto;
+            tarefaEditandoIndex = null;
+            tarefaEditadaTexto = string.Empty;
+        }
+    }
+
+    private void CancelarEdicao()
+    {
+        tarefaEditandoIndex = null;
+        tarefaEditadaTexto = string.Empty;
     }
 }
