@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8/EFJBxRmZFdty8mrE3CGTIGza0Blv7PtsGrAh3YIJQ=",
+  "Hash": "hA3WD0BTaJGi3gD2lJ6iJ923CLxjKSVau6fA01S6Mro=",
   "Source": "ToDoList",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "ncm2v7llpv",
-      "Integrity": "WZfMtY5y1x/JUnzRMpIDWTuuKsauAfGt/4xy+x0/8BI=",
+      "Fingerprint": "rk2kg4waqn",
+      "Integrity": "C2rJwsHODXQTQfQqBcBbXsqqM3wBYdB3v+PHS6J9qTQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -4252,8 +4252,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "d5l4uudxe0",
-      "Integrity": "75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U=",
+      "Fingerprint": "51k8a9a9bp",
+      "Integrity": "aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\ToDoList.pdb"
@@ -4273,8 +4273,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "jy8z0d79ew",
-      "Integrity": "5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28=",
+      "Fingerprint": "9ge7kus84i",
+      "Integrity": "Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\webcil\\ToDoList.wasm"
@@ -6716,7 +6716,7 @@
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.wasm"
     },
     {
-      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-ncm2v7llpv.gz",
+      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-rk2kg4waqn.gz",
       "SourceId": "ToDoList",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\",
@@ -6730,8 +6730,8 @@
       "RelatedAsset": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dqqkbl00t7",
-      "Integrity": "q9xewrUkDvPOsN53RkzzcrZFxPlTy/FGWuNfsvXa4L8=",
+      "Fingerprint": "zwvkrxdnly",
+      "Integrity": "k42Kr08H8+Ng8Oz/fkAIEPMrUqaHHrx7QIBYSgCJGtc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -8270,12 +8270,12 @@
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-d5l4uudxe0.gz",
+      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-51k8a9a9bp.gz",
       "SourceId": "ToDoList",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ToDoList#[.{fingerprint=d5l4uudxe0}]!.pdb.gz",
+      "RelativePath": "_framework/ToDoList#[.{fingerprint=51k8a9a9bp}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8284,8 +8284,8 @@
       "RelatedAsset": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "p459kbnbfk",
-      "Integrity": "x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE=",
+      "Fingerprint": "pq7reqs4ka",
+      "Integrity": "D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.pdb"
@@ -9110,12 +9110,12 @@
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Diagnostics.Tools.wasm"
     },
     {
-      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-jy8z0d79ew.gz",
+      "Identity": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-9ge7kus84i.gz",
       "SourceId": "ToDoList",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ToDoList#[.{fingerprint=jy8z0d79ew}]!.wasm.gz",
+      "RelativePath": "_framework/ToDoList#[.{fingerprint=9ge7kus84i}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9124,8 +9124,8 @@
       "RelatedAsset": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9ode0izc5u",
-      "Integrity": "ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0=",
+      "Fingerprint": "qc9dz2r7ky",
+      "Integrity": "ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.wasm"
@@ -10705,11 +10705,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WZfMtY5y1x/JUnzRMpIDWTuuKsauAfGt/4xy+x0/8BI=\""
+          "Value": "\"C2rJwsHODXQTQfQqBcBbXsqqM3wBYdB3v+PHS6J9qTQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:08:17 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10719,18 +10719,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WZfMtY5y1x/JUnzRMpIDWTuuKsauAfGt/4xy+x0/8BI="
+          "Value": "sha256-C2rJwsHODXQTQfQqBcBbXsqqM3wBYdB3v+PHS6J9qTQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-ncm2v7llpv.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-rk2kg4waqn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000081241368"
+          "Quality": "0.000081214976"
         }
       ],
       "ResponseHeaders": [
@@ -10740,15 +10740,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12308"
+          "Value": "12312"
         },
         {
           "Name": "ETag",
-          "Value": "\"q9xewrUkDvPOsN53RkzzcrZFxPlTy/FGWuNfsvXa4L8=\""
+          "Value": "\"k42Kr08H8+Ng8Oz/fkAIEPMrUqaHHrx7QIBYSgCJGtc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:04:03 GMT"
+          "Value": "Sat, 26 Apr 2025 17:38:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10768,19 +10768,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"WZfMtY5y1x/JUnzRMpIDWTuuKsauAfGt/4xy+x0/8BI=\""
+          "Value": "W/\"C2rJwsHODXQTQfQqBcBbXsqqM3wBYdB3v+PHS6J9qTQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WZfMtY5y1x/JUnzRMpIDWTuuKsauAfGt/4xy+x0/8BI="
+          "Value": "sha256-C2rJwsHODXQTQfQqBcBbXsqqM3wBYdB3v+PHS6J9qTQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-ncm2v7llpv.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\eub24h1al5-rk2kg4waqn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10789,7 +10789,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12308"
+          "Value": "12312"
         },
         {
           "Name": "Content-Type",
@@ -10797,11 +10797,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"q9xewrUkDvPOsN53RkzzcrZFxPlTy/FGWuNfsvXa4L8=\""
+          "Value": "\"k42Kr08H8+Ng8Oz/fkAIEPMrUqaHHrx7QIBYSgCJGtc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:04:03 GMT"
+          "Value": "Sat, 26 Apr 2025 17:38:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10819,7 +10819,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-q9xewrUkDvPOsN53RkzzcrZFxPlTy/FGWuNfsvXa4L8="
+          "Value": "sha256-k42Kr08H8+Ng8Oz/fkAIEPMrUqaHHrx7QIBYSgCJGtc="
         }
       ]
     },
@@ -70263,7 +70263,7 @@
       ]
     },
     {
-      "Route": "_framework/ToDoList.d5l4uudxe0.pdb",
+      "Route": "_framework/ToDoList.51k8a9a9bp.pdb",
       "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70273,7 +70273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27288"
+          "Value": "28440"
         },
         {
           "Name": "Content-Type",
@@ -70281,11 +70281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U=\""
+          "Value": "\"aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:56 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70295,7 +70295,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5l4uudxe0"
+          "Value": "51k8a9a9bp"
         },
         {
           "Name": "label",
@@ -70303,18 +70303,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U="
+          "Value": "sha256-aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.d5l4uudxe0.pdb",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-d5l4uudxe0.gz",
+      "Route": "_framework/ToDoList.51k8a9a9bp.pdb",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-51k8a9a9bp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000049103855"
+          "Quality": "0.000046935136"
         }
       ],
       "ResponseHeaders": [
@@ -70324,15 +70324,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20364"
+          "Value": "21305"
         },
         {
           "Name": "ETag",
-          "Value": "\"x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE=\""
+          "Value": "\"D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70352,13 +70352,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U=\""
+          "Value": "W/\"aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5l4uudxe0"
+          "Value": "51k8a9a9bp"
         },
         {
           "Name": "label",
@@ -70366,13 +70366,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U="
+          "Value": "sha256-aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.d5l4uudxe0.pdb.gz",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-d5l4uudxe0.gz",
+      "Route": "_framework/ToDoList.51k8a9a9bp.pdb.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-51k8a9a9bp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70381,7 +70381,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20364"
+          "Value": "21305"
         },
         {
           "Name": "Content-Type",
@@ -70389,11 +70389,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE=\""
+          "Value": "\"D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70411,7 +70411,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d5l4uudxe0"
+          "Value": "51k8a9a9bp"
         },
         {
           "Name": "label",
@@ -70419,12 +70419,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE="
+          "Value": "sha256-D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.jy8z0d79ew.wasm",
+      "Route": "_framework/ToDoList.9ge7kus84i.wasm",
       "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70434,7 +70434,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23317"
+          "Value": "24853"
         },
         {
           "Name": "Content-Type",
@@ -70442,11 +70442,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28=\""
+          "Value": "\"Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:56 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70456,7 +70456,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jy8z0d79ew"
+          "Value": "9ge7kus84i"
         },
         {
           "Name": "label",
@@ -70464,18 +70464,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28="
+          "Value": "sha256-Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.jy8z0d79ew.wasm",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-jy8z0d79ew.gz",
+      "Route": "_framework/ToDoList.9ge7kus84i.wasm",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-9ge7kus84i.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000097847358"
+          "Quality": "0.000092276460"
         }
       ],
       "ResponseHeaders": [
@@ -70485,15 +70485,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10219"
+          "Value": "10836"
         },
         {
           "Name": "ETag",
-          "Value": "\"ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0=\""
+          "Value": "\"ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70513,13 +70513,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28=\""
+          "Value": "W/\"Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jy8z0d79ew"
+          "Value": "9ge7kus84i"
         },
         {
           "Name": "label",
@@ -70527,13 +70527,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28="
+          "Value": "sha256-Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.jy8z0d79ew.wasm.gz",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-jy8z0d79ew.gz",
+      "Route": "_framework/ToDoList.9ge7kus84i.wasm.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-9ge7kus84i.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70542,7 +70542,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10219"
+          "Value": "10836"
         },
         {
           "Name": "Content-Type",
@@ -70550,11 +70550,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0=\""
+          "Value": "\"ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70572,7 +70572,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jy8z0d79ew"
+          "Value": "9ge7kus84i"
         },
         {
           "Name": "label",
@@ -70580,7 +70580,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0="
+          "Value": "sha256-ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs="
         }
       ]
     },
@@ -70595,7 +70595,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27288"
+          "Value": "28440"
         },
         {
           "Name": "Content-Type",
@@ -70603,11 +70603,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U=\""
+          "Value": "\"aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:56 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70617,18 +70617,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U="
+          "Value": "sha256-aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8="
         }
       ]
     },
     {
       "Route": "_framework/ToDoList.pdb",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-d5l4uudxe0.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-51k8a9a9bp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000049103855"
+          "Quality": "0.000046935136"
         }
       ],
       "ResponseHeaders": [
@@ -70638,15 +70638,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20364"
+          "Value": "21305"
         },
         {
           "Name": "ETag",
-          "Value": "\"x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE=\""
+          "Value": "\"D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70666,19 +70666,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U=\""
+          "Value": "W/\"aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-75VUCdkkGW67Hm+2DnFBzUy9bRTF2wbrtQalf9bNM/U="
+          "Value": "sha256-aQWMU+3P5NEAKGGMeli2AowUHiXaFdGx4shrf0dlV+8="
         }
       ]
     },
     {
       "Route": "_framework/ToDoList.pdb.gz",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-d5l4uudxe0.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\qw3zm1v4ha-51k8a9a9bp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70687,7 +70687,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "20364"
+          "Value": "21305"
         },
         {
           "Name": "Content-Type",
@@ -70695,11 +70695,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE=\""
+          "Value": "\"D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70717,7 +70717,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x62d4aeleUj7itmjhZMZghSeatTCtK+KSD/xIZMWNYE="
+          "Value": "sha256-D2ommBNWIcuVK2d/8AFSf+6FCHWcm1C0KwPfwDmhgAU="
         }
       ]
     },
@@ -70732,7 +70732,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23317"
+          "Value": "24853"
         },
         {
           "Name": "Content-Type",
@@ -70740,11 +70740,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28=\""
+          "Value": "\"Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:56 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70754,18 +70754,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28="
+          "Value": "sha256-Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs="
         }
       ]
     },
     {
       "Route": "_framework/ToDoList.wasm",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-jy8z0d79ew.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-9ge7kus84i.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000097847358"
+          "Quality": "0.000092276460"
         }
       ],
       "ResponseHeaders": [
@@ -70775,15 +70775,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10219"
+          "Value": "10836"
         },
         {
           "Name": "ETag",
-          "Value": "\"ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0=\""
+          "Value": "\"ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70803,19 +70803,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28=\""
+          "Value": "W/\"Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5eO03JxhRdyrh47dmqV0GjJo1zm9uh7rcSONkEuFi28="
+          "Value": "sha256-Fy8HtD0gplDXECxoKIxrWWvtf7uSO+/BMfOuDXlCXvs="
         }
       ]
     },
     {
       "Route": "_framework/ToDoList.wasm.gz",
-      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-jy8z0d79ew.gz",
+      "AssetFile": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\obj\\Debug\\net9.0\\compressed\\wri6283ca5-9ge7kus84i.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70824,7 +70824,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10219"
+          "Value": "10836"
         },
         {
           "Name": "Content-Type",
@@ -70832,11 +70832,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0=\""
+          "Value": "\"ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 26 Apr 2025 15:07:58 GMT"
+          "Value": "Sat, 26 Apr 2025 17:44:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70854,7 +70854,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ufSAJQVrSfFyX/a3oW3lJP7YXtJ2rEa+w5WjID8eAZ0="
+          "Value": "sha256-ZtSJL9SmDyj3E1iJqCFm6hSXs6fy6Z4RyXhGHWdSMMs="
         }
       ]
     },
