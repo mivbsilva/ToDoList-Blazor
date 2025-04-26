@@ -1,11 +1,12 @@
 @page "/tarefas"
 @using System.Collections.Generic
+@using ToDoList.Models
 
 <h1 class="text-2xl font-bold mb-4">ToDoList da Milena</h1>
 
-@if (string.IsNullOrEmpty(nomeNovaLista))
+@if (!criandoNovaLista)
 {
-    <button @onclick="@(() => nomeNovaLista = "Digite o nome da lista")" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Criar Nova Lista</button>
+    <button @onclick="() => criandoNovaLista = true" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Criar Nova Lista</button>
 }
 else
 {
@@ -49,6 +50,7 @@ else
 @code {
     private List<ListaDeTarefas> listas = new();
     private ListaDeTarefas listaSelecionada;
+    private bool criandoNovaLista = false;
     private string nomeNovaLista = string.Empty;
     private ListaDeTarefas listaEmEdicao = null;
 
@@ -58,8 +60,9 @@ else
 
     private void CriarNovaLista()
     {
-        var novaLista = new ListaDeTarefas { Nome = nomeNovaLista, Tarefas = new List<string>() };
+        var novaLista = new ListaDeTarefas { Nome = nomeNovaLista };
         nomeNovaLista = string.Empty;
+        criandoNovaLista = false;
         listas.Add(novaLista);
         listaSelecionada = novaLista;
     }
@@ -80,8 +83,8 @@ else
 
     private void EditarTarefa(ListaDeTarefas lista, int index)
     {
-        listaSelecionada = lista; // Isso você já faz
-        listaEmEdicao = lista;    // <- NOVO
+        listaSelecionada = lista;
+        listaEmEdicao = lista;
         indexDaTarefaEmEdicao = index;
         textoDaTarefaEditada = lista.Tarefas[index];
     }
@@ -93,7 +96,7 @@ else
             listaEmEdicao.Tarefas[(int)indexDaTarefaEmEdicao] = textoDaTarefaEditada;
             indexDaTarefaEmEdicao = null;
             textoDaTarefaEditada = string.Empty;
-            listaEmEdicao = null; // <- resetar
+            listaEmEdicao = null;
         }
     }
 
@@ -101,7 +104,7 @@ else
     {
         indexDaTarefaEmEdicao = null;
         textoDaTarefaEditada = string.Empty;
-        listaEmEdicao = null; // <- resetar
+        listaEmEdicao = null;
     }
 
     private void ExcluirTarefa(ListaDeTarefas lista, int index)
@@ -112,9 +115,5 @@ else
         }
     }
 
-    public class ListaDeTarefas
-    {
-        public string Nome { get; set; }
-        public List<string> Tarefas { get; set; }
-    }
+
 }
