@@ -22,9 +22,9 @@
                 <!-- Cria uma input para editar ligado acessar variável string textoDaTarefaEditada -->
                 <input @bind="textoDaTarefaEditada" class="border p-2 rounded w-full mr-2" />
 
-                <!-- Cria uma botão escrito salvar que, quando clicado, chama acessar função SalvarEdicao -->
+                <!-- Cria uma botão escrito salvar que, quando clicado, chama a função SalvarEdicao -->
                 <button @onclick="SalvarEdicao" class="bg-green-500 text-white px-2 py-1 rounded ml-2">Salvar</button>
-                <!-- Cria uma botão escrito cancelar que, quando clicado, chama acessar função CancelarEdicao -->
+                <!-- Cria uma botão escrito cancelar que, quando clicado, chama a função CancelarEdicao -->
                 <button @onclick="CancelarEdicao" class="bg-gray-400 text-white px-2 py-1 rounded ml-2">Cancelar</button>
             }
             else
@@ -33,9 +33,10 @@
                 <span>@tarefa.Texto</span>
 
                 <!-- Vamos continuar exibindo o botão de Editar-->
-                <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">
-                    ✏️ Editar
-                </button>
+                <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">✏️ Editar</button>
+
+                <!-- Cria uma botão escrito excluir que, quando clicado, chama a função ExcluirTarefa -->
+                <button @onclick="() => ExcluirTarefa(tarefa.Index)" class="text-red-500 text-sm ml-2">🗑️ Excluir</button>
             }
         </li>
     }
@@ -82,4 +83,14 @@
         indexDaTarefaEmEdicao = null; //só limpa o index da tarefa em edição e não faz nada
         textoDaTarefaEditada = string.Empty; //só limpa a string da tarefa em edição e não faz nada
     }
+
+    // função para excluir tarefa
+    private void ExcluirTarefa(int index) //chamada quando clicamos no botão ExcluirTarefa
+    {
+        if (index >= 0 && index < tarefas.Count) //se o index for maior ou igual a 0 e o index for menor que a quantidade de itens, então:
+        {
+            tarefas.RemoveAt(index); //só remover
+        }
+    }
+
 }
