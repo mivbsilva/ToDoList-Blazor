@@ -1075,10 +1075,10 @@ C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net
 C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\ToDoList.pdb
 C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\ref\ToDoList.dll
 C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\ToDoList.sourcelink.json
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.qe02bq5g8b.pdb
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.irzkx8ft4l.wasm
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.qe02bq5g8b.pdb.gz
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.irzkx8ft4l.wasm.gz
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\wri6283ca5-irzkx8ft4l.gz
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\qw3zm1v4ha-qe02bq5g8b.gz
-C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\eub24h1al5-6025kpgcdg.gz
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.xogv3cuij9.pdb
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.nia2jzknu1.wasm
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.xogv3cuij9.pdb.gz
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\bin\Debug\net9.0\wwwroot\_framework\ToDoList.nia2jzknu1.wasm.gz
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\wri6283ca5-nia2jzknu1.gz
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\qw3zm1v4ha-xogv3cuij9.gz
+C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\obj\Debug\net9.0\compressed\eub24h1al5-i4nlf7wfch.gz

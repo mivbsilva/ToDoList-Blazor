@@ -112,8 +112,22 @@ else
         if (index >= 0 && index < lista.Tarefas.Count)
         {
             lista.Tarefas.RemoveAt(index);
+
+            if (lista.Tarefas.Count == 0)
+            {
+                listas.Remove(lista);
+
+                if (listaSelecionada == lista)
+                {
+                    listaSelecionada = null;
+                }
+                if (listaEmEdicao == lista)
+                {
+                    listaEmEdicao = null;
+                    indexDaTarefaEmEdicao = null;
+                    textoDaTarefaEditada = string.Empty;
+                }
+            }
         }
     }
-
-
 }
