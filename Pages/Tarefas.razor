@@ -1,130 +1,117 @@
-@page "/tarefas" 
-@* Define o caminho da página *@
+@page "/tarefas"
 @using System.Collections.Generic
-@* É o namespace que precisamos usar para podermos acessar a classe de List *@
 
-<h1 class="text-2xl font-bold mb-4">ToDoList da Milena</h1> @* Título *@
+<h1 class="text-2xl font-bold mb-4">ToDoList da Milena</h1>
 
-@* Botão para criar nova lista *@
-<button @onclick="CriarNovaLista" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Criar Nova Lista</button>
+@if (string.IsNullOrEmpty(nomeNovaLista))
+{
+    <button @onclick="@(() => nomeNovaLista = "Digite o nome da lista")" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Criar Nova Lista</button>
+}
+else
+{
+    <input @bind="nomeNovaLista" placeholder="Digite o nome da nova lista" class="border p-2 rounded w-full mb-2" />
+    <button @onclick="CriarNovaLista" class="bg-green-500 text-white px-4 py-2 rounded mb-4">Confirmar Nome</button>
+}
 
-@* Iniciando a lista *@
-@foreach (var lista in listas){
+@foreach (var lista in listas)
+{
+    <div class="mb-4">
+        <h2 @onclick="() => SelecionarLista(lista)" class="text-xl font-semibold mb-2 cursor-pointer">@lista.Nome</h2>
 
-    @* Cria-se uma div *@
-    <div class="mb-4"> @* Cria-se uma div *@
-        
-        @* Exibe o nome da lista num h2 *@
-        <h2 class="text-xl font-semibold mb-2">@lista.Nome</h2>
-
-        @* Cria uma botão escrito Selecionar Lista que, quando clicado, chama a função SelecionarLista *@
-        <button @onclick="() => SelecionarLista(lista)" class="bg-green-500 text-white px-4 py-2 rounded mb-2">Selecionar Lista</button> 
-
-        @* Cria uma lista html *@
         <ul>
-            @foreach (var tarefa in lista.Tarefas.Select((t, i) => new { Texto = t, Index = i })){ //Para cada tarefa na lista selecionada de tarefas
-
+            @foreach (var tarefa in lista.Tarefas.Select((t, i) => new { Texto = t, Index = i }))
+            {
                 <li class="border-b py-2 flex justify-between items-center">
-
-                    @* Se o index da tarefa for igual ao index da tarefa passada no indexDaTarefaEmEdicao, então vamos editar *@
-                    @if (tarefa.Index == indexDaTarefaEmEdicao){ 
-
-                        @* Cria uma input para editar ligado acessar variável string textoDaTarefaEditada *@
+                    @if (tarefa.Index == indexDaTarefaEmEdicao && lista == listaEmEdicao)
+                    {
                         <input @bind="textoDaTarefaEditada" class="border p-2 rounded w-full mr-2" />
-                        @* Cria uma botão escrito salvar que, quando clicado, chama a função SalvarEdicao *@
                         <button @onclick="SalvarEdicao" class="bg-green-500 text-white px-2 py-1 rounded ml-2">Salvar</button>
-                        @* Cria uma botão escrito cancelar que, quando clicado, chama a função CancelarEdicao *@
                         <button @onclick="CancelarEdicao" class="bg-gray-400 text-white px-2 py-1 rounded ml-2">Cancelar</button>
                     }
-                    else{
-                        @* Se o index da tarefa for diferente ao index da tarefa passada no indexDaTarefaEmEdicao, então não vamos fazer nada. Vamos continuar pegando o texto da tarefa *@
-
+                    else
+                    {
                         <span>@tarefa.Texto</span>
-
-                        @* Vamos continuar exibindo o botão de Editar *@
-                        <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">✏️ Editar</button>
-                        @* Cria uma botão escrito excluir que, quando clicado, chama a função ExcluirTarefa *@
-                        <button @onclick="() => ExcluirTarefa(tarefa.Index)" class="text-red-500 text-sm ml-2">🗑️ Excluir</button>
+                        <button @onclick="() => EditarTarefa(lista, tarefa.Index)" class="text-blue-500 text-sm ml-2">✏️ Editar</button> @* AJUSTE AQUI *@
+                        <button @onclick="() => ExcluirTarefa(lista, tarefa.Index)" class="text-red-500 text-sm ml-2">🗑️ Excluir</button>
                     }
                 </li>
             }
         </ul>
 
-        @if (lista == listaSelecionada) // se a lista é a mesma da listaSelecionada
+        @if (lista == listaSelecionada)
         {
-            @* Cria um input para inserirmos uma nova tarefa *@
             <input @bind="novaTarefa" placeholder="Digite uma nova tarefa" class="border p-2 rounded w-full mb-2" />
-            @* Cria um botão para inserir a tarefa do input *@
             <button @onclick="AdicionarTarefa" class="bg-blue-500 text-white px-4 py-2 rounded">Adicionar</button>
         }
     </div>
 }
 
 @code {
+    private List<ListaDeTarefas> listas = new();
+    private ListaDeTarefas listaSelecionada;
+    private string nomeNovaLista = string.Empty;
+    private ListaDeTarefas listaEmEdicao = null;
 
-    private List<ListaDeTarefas> listas = new(); //Cria a variável listas que é uma List de Lists strings
-    private ListaDeTarefas listaSelecionada; //Cria a variável listaSelecionada que é uma ListaDeTarefas que é uma List de strings
-    private string novaTarefa; //Cria a variável novaTarefa que é uma string
-    
-    private int? indexDaTarefaEmEdicao = null; //Cria a variável indexDaTarefaEmEdicao que irá guardar o index da tarefa que estou editando int. Pode ser null pelo ?
-    private string textoDaTarefaEditada = string.Empty; //Cria a variável textoDaTarefaEditada que irá guardar a nova tarefa incluída no input que é uma string
+    private string novaTarefa;
+    private int? indexDaTarefaEmEdicao = null;
+    private string textoDaTarefaEditada = string.Empty;
 
-    // função para criar uma nova lista
-    private void CriarNovaLista() //chamada quando clicamos no botão Criar Nova Lista
+    private void CriarNovaLista()
     {
-        var novaLista = new ListaDeTarefas { Nome = "Nova Lista", Tarefas = new List<string>() }; //declarando uma variável novaLista do tipo ListaDeTarefas. Seu nome é Nova Lista e suas Tarefas é uma lista de strings, que são os itens
-        listas.Add(novaLista); // em listas, que é uma List de Lists strings, vamos adicionar a novaLista
-        listaSelecionada = novaLista; //vamos falar que nossa novaLista será então a listaSelecionada, para saber de qual lista estamos falando
+        var novaLista = new ListaDeTarefas { Nome = nomeNovaLista, Tarefas = new List<string>() };
+        nomeNovaLista = string.Empty;
+        listas.Add(novaLista);
+        listaSelecionada = novaLista;
     }
 
-    // Função para selecionar uma lista. Após sabermos de qual lista estamos falando, vamos selecioná-la
-    private void SelecionarLista(ListaDeTarefas lista) //chamada quando clicamos no botão Criar Nova Lista. Recebe uma lista do tipo ListaDeTarefas
+    private void SelecionarLista(ListaDeTarefas lista)
     {
         listaSelecionada = lista;
     }
 
-    //função para adicionar tarefa
-    private void AdicionarTarefa() //chamada quando clicamos no botão Adicionar
+    private void AdicionarTarefa()
     {
-        if (!string.IsNullOrWhiteSpace(novaTarefa)){ //se a string guardada na nova tarefa não for nula ou espaço em branco, então existe uma tarefa preenchida. Então:
-            listaSelecionada.Tarefas.Add(novaTarefa); //adiciona a nova tarefa na lista tarefas selecionada
-            novaTarefa = string.Empty; //limpa a variável string novaTarefa
+        if (!string.IsNullOrWhiteSpace(novaTarefa))
+        {
+            listaSelecionada.Tarefas.Add(novaTarefa);
+            novaTarefa = string.Empty;
         }
     }
 
-    // Função para editar uma tarefa
-    private void EditarTarefa(int index) //chamada quando clicamos no botão Editar
+    private void EditarTarefa(ListaDeTarefas lista, int index)
     {
-        indexDaTarefaEmEdicao = index; //só vai guardar qual o index da tarefa em edição
-        textoDaTarefaEditada = listaSelecionada.Tarefas[index]; // vai guardar o texto string daquele index da lista tarefas selecionada
+        listaSelecionada = lista; // Isso você já faz
+        listaEmEdicao = lista;    // <- NOVO
+        indexDaTarefaEmEdicao = index;
+        textoDaTarefaEditada = lista.Tarefas[index];
     }
 
-    //função para salvar edição
-    private void SalvarEdicao() //chamada quando clicamos no botão Salvar
+    private void SalvarEdicao()
     {
-        if (indexDaTarefaEmEdicao != null && !string.IsNullOrWhiteSpace(textoDaTarefaEditada)){ //se o index da tarefa em edição não for nulo e a string do textoDaTarefaEditada não for nula ou whitespace, quer dizer que existe item em edição. Então:
-
-            listaSelecionada.Tarefas[(int)indexDaTarefaEmEdicao] = textoDaTarefaEditada; //na lista de tarefas selecionada, no index da tarefa em edição, vamos colocar o texto da tarefa editada
-            indexDaTarefaEmEdicao = null; //vamos limpar o index da tarefa em edição
-            textoDaTarefaEditada = string.Empty; //vamos limpar a string do texto da tarefa editada
+        if (indexDaTarefaEmEdicao != null && listaEmEdicao != null && !string.IsNullOrWhiteSpace(textoDaTarefaEditada))
+        {
+            listaEmEdicao.Tarefas[(int)indexDaTarefaEmEdicao] = textoDaTarefaEditada;
+            indexDaTarefaEmEdicao = null;
+            textoDaTarefaEditada = string.Empty;
+            listaEmEdicao = null; // <- resetar
         }
     }
 
-    //função para cancelar edição
-    private void CancelarEdicao() //chamada quando clicamos no botão Cancelar
+    private void CancelarEdicao()
     {
-        indexDaTarefaEmEdicao = null; //só limpa o index da tarefa em edição e não faz nada
-        textoDaTarefaEditada = string.Empty; //só limpa a string da tarefa em edição e não faz nada
+        indexDaTarefaEmEdicao = null;
+        textoDaTarefaEditada = string.Empty;
+        listaEmEdicao = null; // <- resetar
     }
 
-    // Função para excluir tarefa
-    private void ExcluirTarefa(int index){ //chamada quando clicamos no botão ExcluirTarefa
-        if (index >= 0 && index < listaSelecionada.Tarefas.Count){ //se o index for maior ou igual a 0 e o index for menor que a quantidade de itens, então:
-            listaSelecionada.Tarefas.RemoveAt(index); //só remover
+    private void ExcluirTarefa(ListaDeTarefas lista, int index)
+    {
+        if (index >= 0 && index < lista.Tarefas.Count)
+        {
+            lista.Tarefas.RemoveAt(index);
         }
     }
 
-    // Classe para representar uma lista de tarefas
     public class ListaDeTarefas
     {
         public string Nome { get; set; }
