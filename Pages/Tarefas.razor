@@ -1,29 +1,38 @@
-@page "/tarefas"
+@page "/tarefas" 
+<!-- Define o caminho da página -->
 @using System.Collections.Generic
+<!-- É o namespace que precisamos usar para podermos acessar a classe de List -->
 
-<h1 class="text-2xl font-bold mb-4">Painel de Tarefas</h1>
+<h1 class="text-2xl font-bold mb-4">ToDoList da Milena</h1> <!-- Título -->
 
-<input @bind="novaTarefa" placeholder="Digite uma nova tarefa"
-       class="border p-2 rounded w-full mb-2" />
+<input @bind="novaTarefa" placeholder="Digite uma nova tarefa" class="border p-2 rounded w-full mb-2" /> <!-- Campo input -->
 
-<button @onclick="AdicionarTarefa" class="bg-blue-500 text-white px-4 py-2 rounded">Adicionar</button>
+<button @onclick="AdicionarTarefa" class="bg-blue-500 text-white px-4 py-2 rounded">Adicionar</button> <!-- Botão para inserir tarefa do input -->
 
+<!-- Iniciando a lista -->
 <ul class="mt-4">
-    @foreach (var tarefa in tarefas.Select((t, i) => new { Texto = t, Index = i }))
+    @foreach (var tarefa in tarefas.Select((t, i) => new { Texto = t, Index = i })) 
     {
+    <!-- Para cada tarefa na lista de tarefas-->
         <li class="border-b py-2 flex justify-between items-center">
-            @if (tarefa.Index == tarefaEditandoIndex)
+            @if (tarefa.Index == indexDaTarefaEmEdicao)
             {
-                <!-- Input para editar -->
-                <input @bind="tarefaEditadaTexto" class="border p-2 rounded w-full mr-2" />
+            <!-- Se o index da tarefa for igual ao index da tarefa passada no indexDaTarefaEmEdicao, então vamos editar-->
 
+                <!-- Cria uma input para editar ligado acessar variável string textoDaTarefaEditada -->
+                <input @bind="textoDaTarefaEditada" class="border p-2 rounded w-full mr-2" />
+
+                <!-- Cria uma botão escrito salvar que, quando clicado, chama acessar função SalvarEdicao -->
                 <button @onclick="SalvarEdicao" class="bg-green-500 text-white px-2 py-1 rounded ml-2">Salvar</button>
+                <!-- Cria uma botão escrito cancelar que, quando clicado, chama acessar função CancelarEdicao -->
                 <button @onclick="CancelarEdicao" class="bg-gray-400 text-white px-2 py-1 rounded ml-2">Cancelar</button>
             }
             else
             {
+                <!-- Se o index da tarefa for diferente ao index da tarefa passada no indexDaTarefaEmEdicao, então não vamos fazer nada. Vamos continuar pegando o texto da tarefa-->
                 <span>@tarefa.Texto</span>
 
+                <!-- Vamos continuar exibindo o botão de Editar-->
                 <button @onclick="() => EditarTarefa(tarefa.Index)" class="text-blue-500 text-sm ml-2">
                     ✏️ Editar
                 </button>
@@ -33,40 +42,44 @@
 </ul>
 
 @code {
-    private string novaTarefa;
-    private List<string> tarefas = new();
+    private string novaTarefa; //Cria a variável novaTarefa que é uma string
+    private List<string> tarefas = new(); //Cria a variável tarefas que é uma List de strings
 
-    private int? tarefaEditandoIndex = null; // qual tarefa estou editando (null = nenhuma)
-    private string tarefaEditadaTexto = string.Empty; // o texto novo enquanto edita
+    private int? indexDaTarefaEmEdicao = null; //Cria a variável indexDaTarefaEmEdicao que irá guardar o index da tarefa que estou editando int. Pode ser null pelo ?
+    private string textoDaTarefaEditada = string.Empty; //Cria a variável textoDaTarefaEditada que irá guardar a nova tarefa incluída no input que é uma string
 
-    private void AdicionarTarefa()
+    //função para adicionar tarefa
+    private void AdicionarTarefa() //chamada quando clicamos no botão Adicionar
     {
-        if (!string.IsNullOrWhiteSpace(novaTarefa))
+        if (!string.IsNullOrWhiteSpace(novaTarefa)) //se a string guardada na nova tarefa não for nula ou espaço em branco, então existe uma tarefa preenchida. Então:
         {
-            tarefas.Add(novaTarefa);
-            novaTarefa = string.Empty;
+            tarefas.Add(novaTarefa); //adiciona a nova tarefa na lista tarefas
+            novaTarefa = string.Empty; //limpa a variável string novaTarefa
         }
     }
 
-    private void EditarTarefa(int index)
+    //função para editar tarefa
+    private void EditarTarefa(int index) //chamada quando clicamos no botão ✏️ Editar
     {
-        tarefaEditandoIndex = index;
-        tarefaEditadaTexto = tarefas[index]; // coloca no input o valor atual
+        indexDaTarefaEmEdicao = index; //só vai guardar qual o index da tarefa em edição
+        textoDaTarefaEditada = tarefas[index]; // vai guardar o texto string daquele index da lista tarefas
     }
 
-    private void SalvarEdicao()
+    //função para salvar edição
+    private void SalvarEdicao() //chamada quando clicamos no botão Salvar
     {
-        if (tarefaEditandoIndex != null && !string.IsNullOrWhiteSpace(tarefaEditadaTexto))
+        if (indexDaTarefaEmEdicao != null && !string.IsNullOrWhiteSpace(textoDaTarefaEditada)) //se o index da tarefa em edição não for nulo e a string do textoDaTarefaEditada não for nula ou whitespace, quer dizer que existe item em edição. Então:
         {
-            tarefas[(int)tarefaEditandoIndex] = tarefaEditadaTexto;
-            tarefaEditandoIndex = null;
-            tarefaEditadaTexto = string.Empty;
+            tarefas[(int)indexDaTarefaEmEdicao] = textoDaTarefaEditada; //na lista de tarefas, no index da tarefa em edição, vamos colocar o texto da tarefa editada
+            indexDaTarefaEmEdicao = null; //vamos limpar o index da tarefa em edição
+            textoDaTarefaEditada = string.Empty; //vamos limpar a string do texto da tarefa editada
         }
     }
 
-    private void CancelarEdicao()
+    //função para cancelar edição
+    private void CancelarEdicao() //chamada quando clicamos no botão Cancelar
     {
-        tarefaEditandoIndex = null;
-        tarefaEditadaTexto = string.Empty;
+        indexDaTarefaEmEdicao = null; //só limpa o index da tarefa em edição e não faz nada
+        textoDaTarefaEditada = string.Empty; //só limpa a string da tarefa em edição e não faz nada
     }
 }
