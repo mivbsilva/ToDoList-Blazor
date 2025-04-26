@@ -1,0 +1,46 @@
+@using ToDoList.Models
+
+<h1 class="text-2xl font-bold mb-4">ToDoList da Milena</h1>
+
+@if (!criandoNovaLista)
+{
+    <button @onclick="() => criandoNovaLista = true" class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Criar Nova Lista</button>
+}
+else
+{
+    <input @bind="nomeNovaLista" placeholder="Digite o nome da nova lista" class="border p-2 rounded w-full mb-2" />
+    <button @onclick="CriarNovaLista" class="bg-green-500 text-white px-4 py-2 rounded mb-4">Confirmar Nome</button>
+}
+
+@foreach (var lista in listas)
+{
+    <div class="mb-4">
+        <h2 @onclick="() => SelecionarLista(lista)" class="text-xl font-semibold mb-2 cursor-pointer">@lista.Nome</h2>
+
+        <ul>
+            @foreach (var tarefa in lista.Tarefas.Select((t, i) => new { Texto = t, Index = i }))
+            {
+                <li class="border-b py-2 flex justify-between items-center">
+                    @if (tarefa.Index == indexDaTarefaEmEdicao && lista == listaSelecionada)
+                    {
+                        <input @bind="textoDaTarefaEditada" class="border p-2 rounded w-full mr-2" />
+                        <button @onclick="SalvarEdicao" class="bg-green-500 text-white px-2 py-1 rounded ml-2">Salvar</button>
+                        <button @onclick="CancelarEdicao" class="bg-gray-400 text-white px-2 py-1 rounded ml-2">Cancelar</button>
+                    }
+                    else
+                    {
+                        <span>@tarefa.Texto</span>
+                        <button @onclick="() => EditarTarefa(lista, tarefa.Index)" class="text-blue-500 text-sm ml-2">✏️ Editar</button>
+                        <button @onclick="() => ExcluirTarefa(lista, tarefa.Index)" class="text-red-500 text-sm ml-2">🗑️ Excluir</button>
+                    }
+                </li>
+            }
+        </ul>
+
+        @if (lista == listaSelecionada)
+        {
+            <input @bind="novaTarefa" placeholder="Digite uma nova tarefa" class="border p-2 rounded w-full mb-2" />
+            <button @onclick="AdicionarTarefa" class="bg-blue-500 text-white px-4 py-2 rounded">Adicionar</button>
+        }
+    </div>
+}

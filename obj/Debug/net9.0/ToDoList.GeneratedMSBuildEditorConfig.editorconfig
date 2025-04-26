@@ -28,20 +28,28 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Components/Tarefas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXJlZmFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Cadastro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Tarefas.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFyZWZhcy5yYXpvcg==
+[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Sobre.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/_Imports.razor]
