@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ToDoList",
   "resources": {
-    "hash": "sha256-u7qnzvwPC/kjEZpVXVIevQIknf6YjVz8+t27b/n/XNY=",
+    "hash": "sha256-g4mqvNOT5P61SPetmB5/gyNa4ut8hM2e6U0kweZuC2w=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "ToDoList.vypzcuwp5o.wasm": "ToDoList.wasm",
-      "ToDoList.kgdozuun9o.pdb": "ToDoList.pdb"
+      "ToDoList.a1e5qwscz2.wasm": "ToDoList.wasm",
+      "ToDoList.ac0deectt6.pdb": "ToDoList.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hvg7u8bimp.js": "sha256-LX9rFEWGVxhkOkAVPG0w5RxPwzPBlEUz6dQNjWS7M+M="
@@ -412,10 +412,10 @@
       "WindowsBase.5lai2eowco.wasm": "sha256-GcDi5293y2A7oSiFYTbBTUe0d+ISbvgeel4ZNd8KkPM=",
       "mscorlib.wzkfrp7u5k.wasm": "sha256-9PjsU0gaxxz5Vyw++p9DeYUWLsaXbaMS2RbX6wmTUmk=",
       "netstandard.d82br99ghv.wasm": "sha256-DS8keXxU4eQpa1kIoiFxOA2Ii2g9hoNWSaVi8F8AnIE=",
-      "ToDoList.vypzcuwp5o.wasm": "sha256-N3LXoBPi+JRw2cZ4Tva0+z9Be0aCB2bHqcrTHPTraCQ="
+      "ToDoList.a1e5qwscz2.wasm": "sha256-TnA+mGbGHoI6xOg1f0hNwRpHeshg+M9tiWp3oSmZmCM="
     },
     "pdb": {
-      "ToDoList.kgdozuun9o.pdb": "sha256-JDXmQY7hMn89qSkLL+NKMSuWBVpH3YSRoVHAAKYtp64="
+      "ToDoList.ac0deectt6.pdb": "sha256-BvdTpAtfk8zh4nGvrqK5SpBgx/HbUMYdmIkOx/80ISc="
     }
   },
   "cacheBootResources": true,

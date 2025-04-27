@@ -9,8 +9,12 @@
       "PackagePath": "staticwebassets\\ToDoList.styles.css"
     },
     {
-      "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\css\\app.css",
-      "PackagePath": "staticwebassets\\css\\app.css"
+      "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\css\\input.css",
+      "PackagePath": "staticwebassets\\css\\input.css"
+    },
+    {
+      "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\css\\output.css",
+      "PackagePath": "staticwebassets\\css\\output.css"
     },
     {
       "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\favicon.png",
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\img\\carlos-torres-aEO7r8MLqvk-unsplash.png",
+      "PackagePath": "staticwebassets\\img\\carlos-torres-aEO7r8MLqvk-unsplash.png"
     },
     {
       "Id": "C:\\Users\\milen\\Documents\\PWA - Trabalho 1\\PWA_PriTrabalho\\ToDoList\\wwwroot\\index.html",
