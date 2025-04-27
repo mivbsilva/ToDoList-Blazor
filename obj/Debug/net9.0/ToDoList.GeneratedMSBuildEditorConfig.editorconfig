@@ -13,57 +13,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = ToDoList
 build_property.RootNamespace = ToDoList
-build_property.ProjectDir = C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\
+build_property.ProjectDir = c:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList
+build_property.MSBuildProjectDirectory = c:\Users\milen\Documents\PWA - Trabalho 1\PWA_PriTrabalho\ToDoList
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/App.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Components/Tarefas.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Components/Tarefas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXJlZmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/PadraoLayout.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/PadraoLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFBhZHJhb0xheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Cadastro.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Cadastro.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Dashboard.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Dashboard.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Home.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Login.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Sobre.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Pages/Sobre.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/_Imports.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/MainLayout.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ae5i9k07pz
 
-[C:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/NavMenu.razor]
+[c:/Users/milen/Documents/PWA - Trabalho 1/PWA_PriTrabalho/ToDoList/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-avtg6gco62
