@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Components;
 using ToDoList.Models;
+using ToDoList.Services;
 
 namespace ToDoList.Components
 {
@@ -13,6 +14,25 @@ namespace ToDoList.Components
         private string novaTarefa;
         private int? indexDaTarefaEmEdicao = null;
         private string textoDaTarefaEditada = string.Empty;
+        [Inject] private UsuarioService UsuarioService { get; set; }
+        [Inject] public NavigationManager NavigationManager { get; set; }
+        private string nome;
+
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+
+            var usuario = UsuarioService.GetUsuarioLogado();
+
+            if (usuario != null)
+            {
+                nome = usuario.Nome;
+            }
+            else
+            {
+                nome = "Usuário não encontrado";
+            }
+        }
 
         private void CriarNovaLista()
         {

@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Components;
 using ToDoList.Models;
 using System.Text.RegularExpressions;
+using ToDoList.Services;
 
 
 namespace ToDoList.Pages
@@ -17,13 +18,14 @@ namespace ToDoList.Pages
 
         [Inject]
         public NavigationManager NavigationManager { get; set; }
+        [Inject]
+        private UsuarioService UsuarioService { get; set; }
 
         private async Task CriarNovoUsuario()
         {
             msgErro = string.Empty;
             msgSucesso = string.Empty;
 
-            // Validações
             if (string.IsNullOrWhiteSpace(nomeUsuario))
             {
                 msgErro = "O nome de usuário não pode ser vazio.";
@@ -41,24 +43,19 @@ namespace ToDoList.Pages
                 msgErro = "A senha deve conter letras, pelo menos um número e pelo menos um caractere especial.";
             }
 
-            // Se houver erro, retorna e não faz nada
             if (!string.IsNullOrEmpty(msgErro))
             {
                 return;
             }
 
-            // Cria o novo usuário e adiciona à lista
             var novoUsuario = new Usuario { Nome = nome, NomeUsuario = nomeUsuario, Senha = senha };
-            usuarios.Add(novoUsuario);
+            UsuarioService.AdicionarUsuario(novoUsuario);
 
-            // Mensagem de sucesso
             msgSucesso = "Usuário criado com sucesso! Você será redirecionado para o login!";
 
-            // Espera 7 segundos e redireciona para a página de login
-            await Task.Delay(7000); // Espera 7 segundos
-            NavigationManager.NavigateTo("/login"); // Redireciona para a página de login
+            await Task.Delay(3000);
+            NavigationManager.NavigateTo("/login");
 
-            // Limpa os campos
             nome = string.Empty;
             nomeUsuario = string.Empty;
             senha = string.Empty;
